@@ -1,0 +1,277 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto; 
+}
+
+section > div {
+  margin: auto;
+  max-width: 1024px;
+  background: white; 
+}
+
+.btn {
+  border-radius: 5px; 
+}
+
+.loader {
+  min-height: 10px;
+  height: 10px;
+  background: #2780E3;
+  width: 0;
+}
+
+.pagination {
+  justify-content: space-evenly;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+nav {
+  margin: auto; 
+}
+
+@media only screen and (max-width: 425px) {
+    nav {
+        width: 100vw; 
+    }
+
+}
+
+form.form-inline {
+  flex-direction: column;
+}
+
+.separator {
+  padding-right: 3.1rem;
+}
+
+.title {
+  background: #e5ffff;
+  border-bottom: solid;
+}
+
+.logo {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  width: 50px;
+}
+
+.logo::after {
+    border-bottom: solid;
+    border-left: solid;
+    bottom: -1px;
+    bottom: -1px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 50px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+    .logo img {
+    display: none;
+    height: 0;
+    }
+}
+
+.sticky-nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.parallax {
+  min-height: 40vh;
+  position: fixed;
+  position: relative;
+  margin-top: 15vh;
+  top: 0;
+  left: 0;
+  background-image: url("../media/bgi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: -16vh;
+}
+
+.progress-bar {
+  height: 10px;
+  max-width: 100%;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page .card-header p {
+  font-weight: bold;
+}
+.page .card.border-primary {
+   border-radius: 5px;
+   width: 100%;
+   margin: -0.5px;
+}
+
+.info-container {
+  border-top: 1px solid #e5ffff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 7%;
+  padding-top: 7%;
+}
+.info-container > :first-child {
+   display: flex;
+   margin: auto 10%;
+}
+
+.list-group li {
+  padding: 5px;
+}
+
+.list-group h6 {
+  font-weight: bolder;
+  margin: 0;
+  width: 45px;
+  text-align: right;
+}
+
+.list-group p {
+  margin: 0;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.list-group > :last-child h6, .list-group > :last-child p {
+  margin-bottom: 0;
+}
+
+.switch {
+  float: right;
+  height: 34px;
+  position: relative;
+  width: 60px; 
+}
+  .switch input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s; 
+}
+.slider::before {
+    background-color: #fff;
+    bottom: 4px;
+    content: '';
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round::before {
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.modal {
+  overflow-y: scroll;
+  background-color: #373a3c;
+  padding-top: 25vh;
+}
+
+.chart-wrapper {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.coin-selector {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.about-container {
+  border-radius: 120px;
+  border: solid;
+  padding: 1%;
+  margin-top: 30vh;
+}
+.about-container p {
+    margin-top: 20px;
+}
+.about-container .image-container {
+    display: flex;
+    justify-content: space-around;
+}
+.about-container .image-container img {
+    border-radius: 115px; 
+}
+.about-container h6 {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1240px) {
+  .page .card.border-primary {
+    width: 25%;
+  }
+    .about-container {
+        margin-top: 15vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1239px) {
+  .page .card.border-primary {
+    width: 33.33333%;
+  }
+    .about-container {
+        margin-top: 15vh;
+    } 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .page .card.border-primary {
+    width: 50%;
+  }
+  .about-container {
+    margin-top: 15vh;
+    }
+}
