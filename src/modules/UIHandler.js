@@ -1,5 +1,5 @@
 ﻿import { pagination, liveReportsSection, aboutSection, searchModal, limitModal } from './Templates.js'
-import { chart } from './chart.js'
+import { chart } from './Chart.js'
 
 export default class UIHandler {
 
